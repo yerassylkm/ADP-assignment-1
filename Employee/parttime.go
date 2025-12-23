@@ -7,7 +7,7 @@ type PartTime struct {
 
 func (pt PartTime) CalculateBonus() float64 {
 	if pt.HoursWorked > 40 {
-		return float64(pt.HoursWorked-40) * (pt.HourlyRate * 0.5) // Бонус за переработку
+		return float64(pt.HoursWorked-40) * (pt.HourlyRate * 0.5) 
 	}
 	return 0
 }

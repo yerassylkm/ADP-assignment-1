@@ -4,7 +4,6 @@ type HotelManager struct {
 	rooms map[string]Room
 }
 
-// Конструктор — признак хорошего тона (Encapsulation)
 func NewHotel() *HotelManager {
 	return &HotelManager{
 		rooms: make(map[string]Room),
@@ -40,7 +39,6 @@ func (h *HotelManager) CheckOut(roomNumber string) error {
 	return nil
 }
 
-// Метод возвращает данные, а не печатает их
 func (h *HotelManager) GetVacantRooms() []Room {
 	var vacant []Room
 	for _, room := range h.rooms {

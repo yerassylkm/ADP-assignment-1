@@ -48,7 +48,7 @@ func main() {
 	}
 }
 
-// --- Task 1: Hotel Logic ---
+//task 1
 func runHotelMenu(h *Hotel.HotelManager) {
 	fmt.Println("\n--- Hotel Menu ---")
 	fmt.Println("1. Add Room\n2. Check-In\n3. List Vacant")
@@ -78,10 +78,9 @@ func runHotelMenu(h *Hotel.HotelManager) {
 	}
 }
 
-// --- Task 2: Employee Logic (Interface Demo) ---
+//task 2
 func runEmployeeDemo() {
 	fmt.Println("\n--- Employee Payroll (Polymorphism Demo) ---")
-	// Создаем слайс интерфейсов Employee
 	staff := []Employee.Employee{
 		Employee.FullTime{BaseSalary: 5000, BonusPct: 0.1},
 		Employee.PartTime{HourlyRate: 30, HoursWorked: 50},
@@ -95,7 +94,7 @@ func runEmployeeDemo() {
 	}
 }
 
-// --- Task 3: Gym Logic ---
+//taask3
 func runGymDemo(g *Gym.Gym) {
 	fmt.Println("\n--- Gym Management ---")
 	g.AddMember(1, Gym.BasicMember{ID: 1, Name: "John Doe"})
@@ -103,7 +102,7 @@ func runGymDemo(g *Gym.Gym) {
 	g.ListMembers()
 }
 
-// --- Task 4: Wallet Logic ---
+//task 4
 func runWalletMenu(w *Wallet.Wallet) {
 	for {
 		fmt.Printf("\nCurrent Balance: $%.2f\n", w.GetBalance())

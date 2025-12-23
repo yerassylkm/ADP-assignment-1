@@ -6,7 +6,7 @@ type Contractor struct {
 }
 
 func (c Contractor) CalculateBonus() float64 {
-	return float64(c.ProjectsCompleted) * 150.0 // Фиксированная премия за проект
+	return float64(c.ProjectsCompleted) * 150.0
 }
 
 func (c Contractor) CalculateSalary() float64 {
